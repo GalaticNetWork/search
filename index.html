@@ -1,40 +1,148 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <title>Galatic Net Work Search</title>
+    <!-- The description is not directly visible on the page. But it can show up in certain places like search engines. Probably unnecessary for most pages in your blog. -->
+    <meta name="description" content="buscador del sistema web Galatic Net Work ">
+    <!-- This specifies the favicon (little icon on the browser tab) -->
+    <link rel="icon" href="imag/gala.png" type="image/x-icon"/>
+    <!-- This helps our site look consistent across devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The web site of webunderground</title>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" type="favicon" href="img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta charset="UTF-8"> 
+    <!-- Here's the link to our CSS stylesheet! -->
+    <link href="./style/deepBlue.css" rel="stylesheet" type="text/css" media="all">   
+	  
+	  <style>
+
+input[type="text"]{
+    
+    padding: 10px;   
+    border: 2px solid #DDDDDD;
+    
+    /*Applying CSS3 gradient*/
+    background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF');
+    
+    /*Applying CSS 3radius*/   
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    /*Applying CSS3 box shadow*/
+    -moz-box-shadow: 0 0 2px #DDDDDD;
+    -webkit-box-shadow: 0 0 2px #DDDDDD;
+    box-shadow: 0 0 2px #DDDDDD;
+
+}
+input[type="text"]:hover
+{
+    border:1px solid #cccccc;
+}
+input[type="text"]:focus
+{
+    box-shadow:0 0 2px #FFFE00;
+}
+
+.button1 {
+ 
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
+    color: #FfF;
+    padding: 5px 10px 5px 10px;
+    border: solid 1px #CCC;
+ 
+    background: #ba4742;
+    text-shadow: 0px 1px 0px #000;
+ 
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+ 
+    box-shadow: 0 1px 3px #111;
+    -moz-box-shadow: 3px 3px 1px #999;
+    -webkit-box-shadow: 3px 3px 1px #999;
+ 
+    cursor: pointer;
+ 
+}
+.button1:hover {
+    background: #a33f3a;
+- See more at: http://www.tutorialchip.com/css/css3-submit-button-5-professional-examples-to-learn/#sthash.oCO9X1dH.dpuf
+
+#hide-me {
+  width: 100px;
+  height: 100px;
+  background: #bf7130;
+  display: block;
+  padding: 10px;
+  margin: 0 15px 0 0;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  background: rgba(0, 0, 0, .15);
+}
+
+</style>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="controllers/ts.entertaiment.js"></script>
+    <script src="js/db.js"></script>
+	<SCRIPT>
+function ApareceAyuda(){
+ayuda.style.visibility='visible';
+return true;
+}
+
+function DesapareceAyuda(){
+ayuda.style.visibility='hidden';
+return true;
+}
+</SCRIPT>
+
   </head>
-  <body>
-   
- <div class="result">Resultados para el clasificador: <b>{{query}}</b></div>
+<body ng-app="tsEntertainmentApp" ng-controller="VenuesListCtrl" onload=DesapareceAyuda();>
+
+<div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+                
+                <h5 class="mt-2">Buscar </h5>
+                <hr />
+           
+		
+                <div class="form-group">
+                    <input ng-model="query" class="form-control input-lg" placeholder="search">
+<br>
+					  <button type="submit" id="myButton" type="button" class="button1" onclick="ApareceAyuda();" >Search</button>
+
+                </div> </div>	
+				<div class="col-sm-8">
+                <div class="result">Resultados: <b>{{query}}</b></div>
+<A class=menu onclick="ApareceAyuda();"><i class="fa fa-caret-square-o-down" style="font-size:36px"></i></A> <br>
+<br>
+<div id='ayuda' style="psition:absolute;top:50px;left:375px;width=200px;height:200px;text-aling:justify;visibility:hidden">
                 <div ng-repeat="venue in venues | filter:query" class="card shadow p-3 mb-4 bg-white rounded">
                     <div class="cards">
-                        <h5 class="content"><b>Clasificador: </b>{{venue.code_clasf}} <img ng-src="{{venue.icono}}" height="25px" width="25px"</a></h5>
-                        <p class="content"><b>DescripciÃ³n: </b><a href=tel:{{venue.des_clasf}}>{{venue.des_clasf}}</a>
-                            <button class="button3"><a data-toggle="tooltip" title={{venue.des_detallada}}>DescripciÃ³n detallada</a></button>
+		             <h5 class="content"><b>title: </b>{{venue.title}} </h5>
+
+                        <p class="content"><b>links: </b><a href={{venue.des_clasf}}>{{venue.des_clasf}}</a>
+                         <button class="button3"><a data-toggle="tooltip" title={{venue.des_detallada}}>DescripciÃ³n detallada</a></button>
+
+						<h5 class="content"><b>tipo de web: </b>{{venue.code_clasf}} </a></h5>
+
+                        <p class="content"><b>keywords: </b>{{venue.keywords}} </b>
                         </p>
-                        <p class="content"><b>Restringida: </b><a href=tel:{{venue.restringida_}}>{{venue.restringida_}}</a> {{venue.restringida_art}}</a>
-                        </p>
-                        <p class="content"><b>Habilitadora: </b><a href=tel:{{venue.habilitadora_}}>{{venue.habilitadora_}}</a></p>
-                        <p class="content"><b>Habilitada: </b><a href=tel:{{venue.habilitada_}}>{{venue.habilitada_}}</a></p>
-                    </div>
+                         </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- /.container -->
-
+</div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
