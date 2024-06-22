@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of webunderground</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="favicon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="controllers/ts.entertaiment.js"></script>
+  </head>
+  <body>
+   
+ <div class="result">Resultados para el clasificador: <b>{{query}}</b></div>
+                <div ng-repeat="venue in venues | filter:query" class="card shadow p-3 mb-4 bg-white rounded">
+                    <div class="cards">
+                        <h5 class="content"><b>Clasificador: </b>{{venue.code_clasf}} <img ng-src="{{venue.icono}}" height="25px" width="25px"</a></h5>
+                        <p class="content"><b>Descripción: </b><a href=tel:{{venue.des_clasf}}>{{venue.des_clasf}}</a>
+                            <button class="button3"><a data-toggle="tooltip" title={{venue.des_detallada}}>Descripción detallada</a></button>
+                        </p>
+                        <p class="content"><b>Restringida: </b><a href=tel:{{venue.restringida_}}>{{venue.restringida_}}</a> {{venue.restringida_art}}</a>
+                        </p>
+                        <p class="content"><b>Habilitadora: </b><a href=tel:{{venue.habilitadora_}}>{{venue.habilitadora_}}</a></p>
+                        <p class="content"><b>Habilitada: </b><a href=tel:{{venue.habilitada_}}>{{venue.habilitada_}}</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+  </body>
+</html>
