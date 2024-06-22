@@ -129,14 +129,14 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "des_clasf" : "https://webunderground.neocities.org/twitter/"
 	}, {
       "title" : "Blogger",
-      "des_detallada" : "Blogger es un servicio creado por Pyra Labs y adquirido por Google en el año 2003, que permite crear y publicar una bitacora en linea. ",
+      "des_detallada" : "Blogger es un servicio creado por Pyra Labs y adquirido por Google en el aÃ±o 2003, que permite crear y publicar una bitacora en linea. ",
       "code_clasf" : "blog",
       "keywords" : "blogger, blogs, google,site",
       "anio" : "2023",
       "des_clasf" : "https://webunderground.neocities.org/google/stanford/blogger"
     }, {
       "title" : "Google Sites",
-      "des_detallada" : "Google Sites es una aplicación web , que te permite crear un sitio web tú mismo",
+      "des_detallada" : "Google Sites es una aplicaciÃ³n web , que te permite crear un sitio web tÃº mismo",
       "code_clasf" : "site",
       "keywords" : "google sites, web, personales, google",
       "anio" : "2023",
@@ -164,7 +164,7 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "des_clasf" : "https://sciostation.github.io/saxum.html"
     }, {
       "title" : "Radio Natio Station",
-      "des_detallada" : "radio Station natio con programación cultural, músical y de actualidad.",
+      "des_detallada" : "radio Station natio con programaciÃ³n cultural, mÃºsical y de actualidad.",
       "code_clasf" : "page",
       "keywords" : "radio, noticias, musica",
       "anio" : "2023",
@@ -213,18 +213,18 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "des_clasf" : "https://newscities.neocities.org/"
     }, {
       "title" : "MySpace",
-      "des_detallada" : "El objetivo principal de MySpace era reemplazar las simples webs personales por una comunidad online que aglutinase, a través de un perfil, la información de cada usuario. Además, donde pudiesen compartir sus fotos, música favorita y comentarios.",
+      "des_detallada" : "El objetivo principal de MySpace era reemplazar las simples webs personales por una comunidad online que aglutinase, a travÃ©s de un perfil, la informaciÃ³n de cada usuario. AdemÃ¡s, donde pudiesen compartir sus fotos, mÃºsica favorita y comentarios.",
       "code_clasf" : "social",
       "keywords" : "social, web personales, MySpace",
       "anio" : "2023",
       "des_clasf" : "https://newscities.neocities.org/myspace/home"
     }, {
-     "title" : "Legendarium Tv",
-      "des_detallada" : "plataforma puede mirar canales de TV en vivo",
-      "code_clasf" : "site",
-      "keywords" : "tv, television, canales tv",
+     "title" : "Mr X",
+      "des_detallada" : "Tu Guia en la vida con inteligencia artificial",
+      "code_clasf" : "page",
+      "keywords" : "Mr X, superacion, personal, guia",
       "anio" : "2023",
-      "des_clasf" : "https://legendarium.neocities.org/tv/"
+      "des_clasf" : "https://galaticnetwork.github.io/Mr x/"
     }, {
       "title" : "Legendarium Tv",
       "des_detallada" : "plataforma puede mirar canales de TV en vivo",
