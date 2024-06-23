@@ -226,12 +226,12 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2023",
       "des_clasf" : "https://galaticnetwork.github.io/Mr x/"
     }, {
-      "title" : "Legendarium Tv",
-      "des_detallada" : "plataforma puede mirar canales de TV en vivo",
-      "code_clasf" : "site",
-      "keywords" : "tv, television, canales tv",
+      "title" : "webunderground",
+      "des_detallada" : " webunderground es subterranea implica que es distinta a los que marcan los canones, en difentente y prentende dar su informacion desde un punto de vista alterno a los principales portales de internet ",
+      "code_clasf" : "page",
+      "keywords" : "webunderground, page",
       "anio" : "2023",
-      "des_clasf" : "https://legendarium.neocities.org/tv/"
+      "des_clasf" : "https://webunderground.neocities.org/"
     }, {
       "title" : "Legendarium Tv",
       "des_detallada" : "plataforma puede mirar canales de TV en vivo",
