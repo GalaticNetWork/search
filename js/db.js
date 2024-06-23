@@ -233,12 +233,12 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2023",
       "des_clasf" : "https://webunderground.neocities.org/"
     }, {
-      "title" : "Legendarium Tv",
-      "des_detallada" : "plataforma puede mirar canales de TV en vivo",
-      "code_clasf" : "site",
-      "keywords" : "tv, television, canales tv",
+      "title" : "Mastodon",
+      "des_detallada" : "Mastodon es una red social libre creada por el programador aleman Eugen Rochko,​ fue desarrollada para implementar un conjunto de redes sociales de microblogueo que conforman al Fediverso, con una gran semejanza a X ",
+      "code_clasf" : "social",
+      "keywords" : "red social, Mastodon, Fediverso",
       "anio" : "2023",
-      "des_clasf" : "https://legendarium.neocities.org/tv/"
+      "des_clasf" : "https://webunderground.neocities.org/mastodon/perfil"
     }, {
       "title" : "Legendarium Tv",
       "des_detallada" : "plataforma puede mirar canales de TV en vivo",
