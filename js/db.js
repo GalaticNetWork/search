@@ -247,19 +247,19 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2023",
       "des_clasf" : "https://sciostation.github.io/la-tele/"
     }, {
-      "title" : "Legendarium Tv",
-      "des_detallada" : "plataforma puede mirar canales de TV en vivo",
-      "code_clasf" : "site",
-      "keywords" : "tv, television, canales tv",
+      "title" : "couch",
+      "des_detallada" : "Experto en el desarrollo personal , cambiando tu mentabilidad y forma de actuar para que tengas exito en todos los aspectos de tu vida",
+      "code_clasf" : "blogs",
+      "keywords" : "couch, experto, blog",
       "anio" : "2023",
-      "des_clasf" : "https://legendarium.neocities.org/tv/"
+      "des_clasf" : "http://publish.lycos.com/duaro2012"
     }, {
-       "title" : "Legendarium Tv",
-      "des_detallada" : "plataforma puede mirar canales de TV en vivo",
-      "code_clasf" : "site",
-      "keywords" : "tv, television, canales tv",
+       "title" : "cultura maker",
+      "des_detallada" : "La cultura maker, a veces tambien conocida como “cultura hacedora",
+      "code_clasf" : "blogs",
+      "keywords" : "blog, maker, cultura",
       "anio" : "2023",
-      "des_clasf" : "https://legendarium.neocities.org/tv/"       
+      "des_clasf" : "http://publish.lycos.com/faedgaro"       
 	  } ]
 
 });
