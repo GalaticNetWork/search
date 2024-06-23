@@ -240,12 +240,12 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2023",
       "des_clasf" : "https://webunderground.neocities.org/mastodon/perfil"
     }, {
-      "title" : "Legendarium Tv",
-      "des_detallada" : "plataforma puede mirar canales de TV en vivo",
+      "title" : "la tele",
+      "des_detallada" : " Es un proyecto de código abierto gratuito que permite gestionar canales de televisión de libre acceso por Internet.",
       "code_clasf" : "site",
       "keywords" : "tv, television, canales tv",
       "anio" : "2023",
-      "des_clasf" : "https://legendarium.neocities.org/tv/"
+      "des_clasf" : "https://sciostation.github.io/la-tele/"
     }, {
       "title" : "Legendarium Tv",
       "des_detallada" : "plataforma puede mirar canales de TV en vivo",
