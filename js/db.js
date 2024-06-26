@@ -268,6 +268,20 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2024",
       "des_clasf" : "https://newscities.neocities.org/marca/"
     }, {
+       "title" : "vincorocks",
+      "des_detallada" : "Banda virtual de rock music critica social a la debil mentalidad del hombre occidental",
+      "code_clasf" : "page",
+      "keywords" : "rock, musica, page",
+      "anio" : "2024",
+      "des_clasf" : "https://newscities.neocities.org/music/albums"
+    }, {
+	"title" : "pixelfed",
+      "des_detallada" : "red social al estilo de instagran solo que de fedeverso",
+      "code_clasf" : "social",
+      "keywords" : "social, instagram, pixelfed",
+      "anio" : "2024",
+      "des_clasf" : "https://newscities.neocities.org/instagram/"
+    }, {
 	"title" : "search",
       "des_detallada" : "otro buscador alterno",
       "code_clasf" : "search",
