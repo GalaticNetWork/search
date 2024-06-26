@@ -254,12 +254,19 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2023",
       "des_clasf" : "http://publish.lycos.com/duaro2012"
     }, {
-	  "title" : "oldweb",
+	"title" : "oldweb",
       "des_detallada" : "la web de los 90s la web 1.0 donde el usuario final solo era consumidor de la informacion y no creador",
       "code_clasf" : "search",
       "keywords" : "search, buscador, site",
       "anio" : "2024",
       "des_clasf" : "https://newscities.neocities.org/oldweb/"
+    }, {
+       "title" : "Productos Marca Personal",
+      "des_detallada" : "fabricacion y comercializacion de productos originales hechos por personas y no industrias de forma artesanal y personalizados y totalmente autenticos.",
+      "code_clasf" : "page",
+      "keywords" : "productos, emprender, page",
+      "anio" : "2024",
+      "des_clasf" : "https://newscities.neocities.org/marca/"
     }, {
 	"title" : "search",
       "des_detallada" : "otro buscador alterno",
