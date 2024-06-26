@@ -254,6 +254,13 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2023",
       "des_clasf" : "http://publish.lycos.com/duaro2012"
     }, {
+	  "title" : "oldweb",
+      "des_detallada" : "la web de los 90s la web 1.0 donde el usuario final solo era consumidor de la informacion y no creador",
+      "code_clasf" : "search",
+      "keywords" : "search, buscador, site",
+      "anio" : "2024",
+      "des_clasf" : "https://newscities.neocities.org/oldweb/"
+    }, {
 	"title" : "search",
       "des_detallada" : "otro buscador alterno",
       "code_clasf" : "search",
