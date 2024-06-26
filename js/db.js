@@ -254,6 +254,14 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2023",
       "des_clasf" : "http://publish.lycos.com/duaro2012"
     }, {
+	"title" : "search",
+      "des_detallada" : "otro buscador alterno",
+      "code_clasf" : "search",
+      "keywords" : "search, buscador, motor de busqueda",
+      "anio" : "2023",
+      "des_clasf" : "https://newscities.neocities.org/search/"
+    }, {
+  
        "title" : "cultura maker",
       "des_detallada" : "La cultura maker, a veces tambien conocida como “cultura hacedora",
       "code_clasf" : "blogs",
