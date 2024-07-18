@@ -16,6 +16,7 @@
     <script src="controllers/ts.entertaiment.js"></script>
   </head>
   <body>
+    <center>
    
  <div class="result">Resultados para el clasificador: <b>{{query}}</b></div>
                 <div ng-repeat="venue in venues | filter:query" class="card shadow p-3 mb-4 bg-white rounded">
@@ -28,6 +29,7 @@
                         </p>
                         <p class="content"><b>Habilitadora: </b><a href=tel:{{venue.habilitadora_}}>{{venue.habilitadora_}}</a></p>
                         <p class="content"><b>Habilitada: </b><a href=tel:{{venue.habilitada_}}>{{venue.habilitada_}}</a></p>
+                   </center>
                     </div>
                 </div>
             </div>
