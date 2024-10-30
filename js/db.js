@@ -282,6 +282,13 @@ tsEntertainmentApp.controller('VenuesListCtrl', function($scope) {
       "anio" : "2024",
       "des_clasf" : "https://newscities.neocities.org/instagram/"
     }, {
+	"title" : "haiper ia",
+      "des_detallada" : " Haiper AI, diseñada para crear vídeos",
+      "code_clasf" : "social",
+      "keywords" : "social, instagram, pixelfed",
+      "anio" : "2024",
+      "des_clasf" : "https://newscities.neocities.org/instagram/"
+    }, {
 	"title" : "search",
       "des_detallada" : "otro buscador alterno",
       "code_clasf" : "search",
